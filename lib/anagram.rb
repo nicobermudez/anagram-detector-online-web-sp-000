@@ -10,6 +10,4 @@ class Anagram
     words.each {|matching_word| return matching_word if mathing_word.chars.sort_by(&:downcase).join == word.chars.sort_by(&:downcase).join  }
   end
 
-
-
 end
