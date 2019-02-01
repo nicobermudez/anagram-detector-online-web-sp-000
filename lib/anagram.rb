@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(words)
-    words.each {|matching_word| return matching_word if matching_word.chars.sort_by(&:downcase).join == word.chars.sort_by(&:downcase).join  }
+    words.select {|matching_word| matching_word.chars.sort_by(&:downcase).join == word.chars.sort_by(&:downcase).join  }
   end
 
 end
